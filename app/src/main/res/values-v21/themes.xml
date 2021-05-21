@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.SeekBar" parent="Theme.MusicPlayer">
+        <item name="android:thumbTint">@color/colorPrimary</item>
+        <item name="android:progressTint">@color/colorPrimary</item>
+        <item name="android:progressBackgroundTint">@color/colorOnPrimary</item>
+    </style>
+
+</resources>

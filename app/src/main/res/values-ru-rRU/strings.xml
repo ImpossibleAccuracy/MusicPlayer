@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Defaults -->
+    <string name="default_artist">Исполнитель не указан</string>
+    <string name="default_author">Автор не указан</string>
+    <string name="default_album">Альбом не указан</string>
+
+    <!-- Buttons -->
+    <string name="delete">Удалить</string>
+    <string name="rename">Переименовать</string>
+    <string name="cancel">Назад</string>
+    <string name="create">Создать</string>
+    <string name="scan">Сканировать устройтсво</string>
+    <string name="all_songs">Вся музыка</string>
+    <string name="favorites">Избранное</string>
+    <string name="playlists">Плейлисты</string>
+    <string name="load_audio">Сканировать устройство</string>
+    <string name="recent_opened">Недавнее</string>
+    <string name="rename_playlist">Переименовать плейлист</string>
+    <string name="delete_playlist">Удалить плейлист</string>
+    <string name="create_new_playlist">Создать плейлист!</string>
+
+    <!-- Hints -->
+    <string name="playlist_name_hint">Название плейлиста</string>
+
+    <!-- Labels -->
+    <string name="path">Файл:</string>
+    <string name="title">Название:</string>
+    <string name="album">Альбом:</string>
+    <string name="author">Автор:</string>
+    <string name="artist">Исполнитель:</string>
+    <string name="shuffle">Перемешать</string>
+    <string name="your_playlists">Ваши плейлисты</string>
+    <string name="title_select_audio">Выберите треки</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="enter_playlist_name">Введите название плейлиста</string>
+    <string name="lyrics_not_found">Текст не найден!</string>
+    <string name="track_information">Информация о треке</string>
+    <string name="total">Всего:</string>
+    <string name="size">Всего:</string>
+
+    <!-- Alerts -->
+    <string name="empty_playlist_alert">Тут пусто!</string>
+    <string name="no_songs_alert">На вашем устройстве нет аудио!</string>
+    <string name="no_playlists_alert">Вы не создавали плейлисты!</string>
+    <string name="apply">Подтвердить</string>
+    <string name="scan_result_success">Сканирование завершено. %d треков найденно.</string>
+    <string name="scan_result_fail">Сканирование завершено. Треков не найденно.</string>
+
+    <!-- Preferences -->
+    <string name="hide_short_tracks">Скрывать короткие треки</string>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">GammaPlayer</string>
+
+    <!-- Defaults -->
+    <string name="default_artist">Unknown artist</string>
+    <string name="default_author">Unknown author</string>
+    <string name="default_album">Unknown album</string>
+    <string name="notification_channel_name" translatable="false">Player controls</string>
+
+    <!-- Buttons -->
+    <string name="apply">Apply</string>
+    <string name="delete">Delete</string>
+    <string name="rename">Rename</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="scan">Scan device</string>
+    <string name="all_songs">All songs</string>
+    <string name="favorites">Favorites</string>
+    <string name="playlists">Playlists</string>
+    <string name="load_audio">Load audio</string>
+    <string name="recent_opened">Recent opened</string>
+    <string name="rename_playlist">Rename playlist</string>
+    <string name="delete_playlist">Delete playlist</string>
+    <string name="create_new_playlist">Create new playlist!</string>
+
+    <!-- Hints -->
+    <string name="playlist_name_hint">Playlist name</string>
+
+    <!-- Labels -->
+    <string name="path">Path:</string>
+    <string name="title">Title:</string>
+    <string name="album">Album:</string>
+    <string name="author">Author:</string>
+    <string name="artist">Artist:</string>
+    <string name="play" translatable="false">Play</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="pause" translatable="false">Pause</string>
+    <string name="previous" translatable="false">Previous</string>
+    <string name="stop" translatable="false">stop</string>
+    <string name="page_name_placeholder" translatable="false">Page name</string>
+    <string name="playlist_name_placeholder" translatable="false">Playlist name</string>
+    <string name="song_name_placeholder" translatable="false">Song name</string>
+    <string name="song_author_placeholder" translatable="false">Song author</string>
+    <string name="song_time_placeholder" translatable="false">00:00</string>
+
+    <!-- Titles -->
+    <string name="size">Size:</string>
+    <string name="total">Total:</string>
+    <string name="shuffle">Play shuffle</string>
+    <string name="your_playlists">Your Playlists</string>
+    <string name="title_select_audio">Select audio</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="lyrics_not_found">Lyrics not found!</string>
+    <string name="track_information">Track information</string>
+    <string name="enter_playlist_name">Enter playlist name</string>
+
+    <!-- Alerts -->
+    <string name="empty_playlist_alert">No audio here!</string>
+    <string name="no_songs_alert">You have no songs on your device!</string>
+    <string name="no_playlists_alert">You have no playlists!</string>
+    <string name="scan_result_success">Scan completed. %d audio found.</string>
+    <string name="scan_result_fail">Scan completed. Music not found.</string>
+
+    <!-- Preferences -->
+    <string name="hide_short_tracks">Hide short tracks</string>
+
+    <string-array name="Themes">
+        <item>Dark</item>
+        <item>Light</item>
+        <item>Follow System</item>
+    </string-array>
+
+</resources>

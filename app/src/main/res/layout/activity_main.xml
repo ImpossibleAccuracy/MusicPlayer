@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/MainPreviewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <!-- TODO: change src -->
+        <ImageView
+            android:id="@+id/SongIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_track_icon" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.1"
+            android:background="@color/colorPrimaryVariant" />
+
+        <include layout="@layout/main_top_bar" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/MainControlPanel"
+            style="@style/SelectableItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/backgroundColor"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/SongInfoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:id="@+id/SongNameView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/song_name_placeholder"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/title_text_size" />
+
+                    <TextView
+                        android:id="@+id/SongArtistView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:singleLine="true"
+                        android:text="@string/song_author_placeholder"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="@dimen/normal_text_size" />
+                </LinearLayout>
+
+                <com.example.musicplayer.widget.ControlButton
+                    android:id="@+id/ControlButton"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="10dp"
+                    app:btn_color="dark" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <com.example.musicplayer.widget.LineView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/AllSongsButton"
+                style="@style/Widget.MaterialButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/all_songs"
+                android:textSize="@dimen/normal_text_size"
+                android:textColor="@color/colorPrimary"
+                app:backgroundTint="@color/backgroundColor"
+                app:icon="@drawable/grid_icon_allmusic"
+                app:iconGravity="textStart"
+                app:iconSize="@dimen/icon_size" />
+
+            <com.example.musicplayer.widget.LineView
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/FavoritesButton"
+                style="@style/Widget.MaterialButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/favorites"
+                android:textSize="@dimen/normal_text_size"
+                app:backgroundTint="@color/backgroundColor"
+                app:icon="@drawable/grid_icon_collect"
+                app:iconGravity="textStart"
+                app:iconSize="@dimen/icon_size" />
+        </LinearLayout>
+
+        <com.example.musicplayer.widget.LineView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/AllPlaylistsButton"
+                style="@style/Widget.MaterialButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/playlists"
+                android:textSize="@dimen/normal_text_size"
+                app:backgroundTint="@color/backgroundColor"
+                app:icon="@drawable/grid_icon_playlist"
+                app:iconGravity="textStart"
+                app:iconSize="@dimen/icon_size" />
+
+            <com.example.musicplayer.widget.LineView
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/RecentOpenedSongsButton"
+                style="@style/Widget.MaterialButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/recent_opened"
+                android:textSize="@dimen/normal_text_size"
+                app:backgroundTint="@color/backgroundColor"
+                app:icon="@drawable/grid_icon_playhistory"
+                app:iconGravity="textStart"
+                app:iconSize="@dimen/icon_size" />
+        </LinearLayout>
+
+        <com.example.musicplayer.widget.LineView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/nav_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/backgroundColor" />
+
+</LinearLayout>

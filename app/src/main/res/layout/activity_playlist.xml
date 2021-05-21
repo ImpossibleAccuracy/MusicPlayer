@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PlaylistActivity">
+
+    <include layout="@layout/named_page_top_bar" />
+
+    <LinearLayout
+        android:id="@+id/ShufflePlayLayout"
+        style="@style/SelectableItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="5dp">
+
+        <ImageButton
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:background="@drawable/btn_play_shuffle" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="@string/shuffle"
+            android:textColor="@color/crimson"
+            android:textSize="@dimen/normal_text_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:textSize="@dimen/normal_text_size" />
+
+            <TextView
+                android:id="@+id/AudioCountView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:textSize="@dimen/title_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.example.musicplayer.widget.LineView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.example.musicplayer.widget.PlaylistView
+        android:id="@+id/PlaylistView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.example.musicplayer.widget.LineView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.example.musicplayer.widget.PlaybarLayout
+        android:id="@+id/PlaybarLayout"
+        style="@style/SelectableItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height" />
+
+</LinearLayout>

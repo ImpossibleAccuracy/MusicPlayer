@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">@color/crimson</color>
+
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryVariant">#3A3A3A</color>
+    <color name="colorOnPrimary">@color/black</color>
+
+    <color name="colorSecondary">#DDDDDD</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="colorOnSecondary">#353535</color>
+
+    <color name="lineColor">#575757</color>
+    <color name="topBarColor">#303030</color>
+    <color name="progressbarColor">#FD1A48</color>
+    <color name="translucentLineColor">#66292929</color>
+    <color name="backgroundColor">@color/backgroundColorNight</color>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ControlButton">
+        <attr name="btn_color" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressView">
+        <attr name="progress_color" format="color" />
+        <attr name="circle_width" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="AudioVisualizer">
+        <attr name="lineColor" format="color" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineMargin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="PageView">
+        <attr name="circle_color" format="color" />
+        <attr name="selected_circle_color" format="color" />
+        <attr name="circle_radius" format="dimension" />
+        <attr name="circle_margins" format="dimension" />
+    </declare-styleable>
+
+</resources>

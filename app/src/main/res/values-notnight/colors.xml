@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FD1A48</color>
+
+    <color name="colorPrimary">#FF171717</color>
+    <color name="colorPrimaryVariant">#FF171717</color>
+    <color name="colorOnPrimary">#BDBDBD</color>
+
+    <color name="colorSecondary">#4A4A4A</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="colorOnSecondary">#4A4A4A</color>
+
+    <color name="lineColor">#E1E1E1</color>
+    <color name="topBarColor">#E8E8E8</color>
+    <color name="progressbarColor">@color/colorAccent</color>
+    <color name="translucentLineColor">#66292929</color>
+    <color name="backgroundColor">@color/backgroundColorLight</color>
+</resources>

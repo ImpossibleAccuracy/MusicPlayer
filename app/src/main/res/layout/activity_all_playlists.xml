@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AllPlaylistsActivity">
+
+    <include layout="@layout/named_page_top_bar" />
+
+    <com.example.musicplayer.widget.LineView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/backgroundColor"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/PlaylistsView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/NoPlaylistsView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_playlists_alert" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.example.musicplayer.widget.LineView
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.example.musicplayer.widget.PlaybarLayout
+        android:id="@+id/PlaybarLayout"
+        style="@style/SelectableItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_height" />
+
+</LinearLayout>
